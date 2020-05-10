@@ -5,7 +5,8 @@ module.exports = {
     mode: 'development',
     module: {
         rules: [
-            {test: /\.css$/i, use:['style-loader', 'css-loader']}
+            { test: /\.css$/i, use: ['style-loader', 'css-loader'] },
+            { test: /\.pug$/i, use: ['pug-loader'] }
         ]
     },
     

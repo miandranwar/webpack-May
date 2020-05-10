@@ -6,12 +6,13 @@ let minicss = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'production',
     plugins: [
-        new htmlplugin({ template: './src/index.html' }),
+        new htmlplugin({ template: './src/index.pug' }),
         new minicss()
     ],
     module: {
         rules: [
-            {test: /\.css$/i, use:[minicss.loader, 'css-loader']}
+            { test: /\.css$/i, use: [minicss.loader, 'css-loader'] },
+            { test: /\.pug$/i, use: ['pug-loader'] }
         ]
     },
     
