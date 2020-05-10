@@ -11,7 +11,7 @@ module.exports = {
     ],
     module: {
         rules: [
-            { test: /\.css$/i, use: [minicss.loader, 'css-loader'] },
+            { test: /\.s[ac]ss$/i, use: [minicss.loader, 'css-loader', 'sass-loader'] },
             { test: /\.pug$/i, use: ['pug-loader'] }
         ]
     },
