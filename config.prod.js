@@ -6,7 +6,7 @@ let minicss = require('mini-css-extract-plugin');
 module.exports = {
     mode: 'production',
     plugins: [
-        new htmlplugin({ template: './src/index.pug' }),
+        new htmlplugin({ template: './src/views/index.pug' }),
         new minicss()
     ],
     module: {
