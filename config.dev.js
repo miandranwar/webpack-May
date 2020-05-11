@@ -14,7 +14,7 @@ module.exports = {
         rules: [
             { test: /\.s[ac]ss$/i, use: ['style-loader', 'css-loader', 'sass-loader','resolve-url-loader'] },
             { test: /\.pug$/i, use: ['pug-loader'] },
-            { test: /\.jpg$/i, use: [{ loader: 'file-loader' }] }
+            { test: /\.(jpg|png|svg|gif)$/i, use: [{ loader: 'file-loader' }] }
             
         ]
     },
