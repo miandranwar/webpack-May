@@ -1,0 +1,4 @@
+@import './images/hero.jpg'
+.header {
+    background-image: url('hero.jpg')
+}

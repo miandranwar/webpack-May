@@ -1,2 +1,2 @@
-*{margin:0px;padding:0px}h1{color:red;text-align:center}div{padding:100px}div h2{color:green}div h3{color:purple}
+*{margin:0px;padding:0px}body{display:grid;grid-template-rows:1fr 1fr 50px}body .header{padding:20px;background-color:#9C0469;color:#fff;text-align:center}body .header .headercontent{position:relative;top:50%;left:50%;transform:translate(-50%, -50%)}body .main{padding:20px 50px;background-image:url(hero.jpg)}body .main .menu{border:solid 4px #155801;border-radius:25px;background-color:#56a53e;padding:20px}body .main .menu .bar{text-align:center}body .main .menu .bar a{color:#9C0469;text-decoration:none;font-size:18px;margin:20px}body .main .mainbody{padding:20px}body .footer{background-color:#9C0469;color:#000;text-align:center}
 
