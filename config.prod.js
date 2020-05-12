@@ -11,9 +11,9 @@ module.exports = {
     ],
     module: {
         rules: [
-            { test: /\.s[ac]ss$/i, use: [minicss.loader, 'css-loader', 'sass-loader'] },
+            { test: /\.css$/i, use: [minicss.loader, 'css-loader', 'sass-loader'] },
             { test: /\.pug$/i, use: ['pug-loader'] },
-            { test: /\.(jpg|png|svg|gif)$/i, use: [{ loader: 'file-loader', options:{name:'[name].[ext]', outputpath: 'images/', publicpath: 'images/'} }] }
+            { test: /\.(jpg|png|svg|gif)$/i, use: [{ loader: 'file-loader', options:{name:'[name].[ext]', outputpath: 'Asserts/images/', publicpath: 'Asserts/images/'} }] }
 
         ]
     },

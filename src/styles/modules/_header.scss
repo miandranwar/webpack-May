@@ -1,0 +1,36 @@
+.header {
+    background-color: #BA0B7E;
+    height: 12.5rem;
+}
+
+.menu {
+        position: fixed;
+        text-align: center;
+        width: 100%;
+        a {
+            position: relative;
+            top: 1.25rem;
+            color: #fff;
+            padding: 1.5rem;
+            background-color: #BA0B7E;
+        }
+}
+
+.content {
+        text-align: center;
+        position: relative;
+        top: 50%;
+        right: -50%;
+        transform: translate(-50%, -50%);
+        &__title {
+            color: #fff;
+            font-size: 4rem;
+            font-weight: 300;
+            padding-top: 4rem;
+            text-shadow: 4px 2px 0 rgba(0,0,0,.8);
+            font-family: 'Fredericka the Great', cursive;
+        }
+        &__subtitle {
+            color: #ffff00;
+        }
+}

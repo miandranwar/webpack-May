@@ -3,11 +3,12 @@ let htmlplugin = require('html-webpack-plugin');
 let minicss = require('mini-css-extract-plugin');
 
 
+
 module.exports = {
     mode: 'development',
     plugins: [
         new htmlplugin({ template: './src/views/index.pug' }),
-        new minicss()
+        new minicss(),
     ],
 
     module: {
