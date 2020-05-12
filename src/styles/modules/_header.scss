@@ -1,29 +1,28 @@
 .header {
-    background-color: #BA0B7E;
+    background-color:$main-color;
     height: 12.5rem;
 }
 
 .menu {
         position: fixed;
-        text-align: center;
         width: 100%;
+        z-index: 1;
         a {
             position: relative;
             top: 1.25rem;
-            color: #fff;
+            color: $header-text;
             padding: 1.5rem;
-            background-color: #BA0B7E;
+            background-color: $main-color;
         }
 }
 
 .content {
-        text-align: center;
         position: relative;
         top: 50%;
         right: -50%;
         transform: translate(-50%, -50%);
         &__title {
-            color: #fff;
+            color:$header-text;
             font-size: 4rem;
             font-weight: 300;
             padding-top: 4rem;
@@ -31,6 +30,6 @@
             font-family: 'Fredericka the Great', cursive;
         }
         &__subtitle {
-            color: #ffff00;
+            color: $subtitle-color;
         }
 }
